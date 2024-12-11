@@ -17,11 +17,11 @@ const Home = ({ setSelectedPage }: Props) => {
 
   return (
     <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
-      <div>
-        <div>
-          <div>
-            <div>
-              <div>
+      <div className="md:flex md:h-5/6 w-5/6 mx-auto items-center justify-center">
+        <div className="md:basis-3/5 z-10 mt-32">
+          <div className="md:-mt-20">
+            <div className="relative">
+              <div className="before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext">
                 <img src={HomePageText} alt="home-page-text" />
               </div>
             </div>
