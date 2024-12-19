@@ -81,6 +81,21 @@ const Benefits = ({ setSelectedPage }: Props) => {
             />
           ))}
         </motion.div>
+        <div>
+          <img />
+          <div>
+            <div className="relative">
+              <div className="before:absolute before:-left-20 before:-top-20 before:z-[1] before:content-abstractwaves">
+                <div>
+                  <HText>
+                    MILLIONS OF HAPPY MEMBERS GETTING{" "}
+                    <span className="text-primary-500">FIT</span>
+                  </HText>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </motion.div>
     </section>
   );
