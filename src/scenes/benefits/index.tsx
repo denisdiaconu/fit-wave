@@ -7,6 +7,7 @@ import {
 } from "@heroicons/react/24/solid";
 import HText from "@/shared/HText";
 import Benefit from "./Benefit";
+import ActionButton from "@/shared/ActionButton";
 
 const benefits: Array<BenefitType> = [
   {
@@ -92,6 +93,29 @@ const Benefits = ({ setSelectedPage }: Props) => {
                     <span className="text-primary-500">FIT</span>
                   </HText>
                 </div>
+              </div>
+            </div>
+            <div>
+              <p className="my-5">
+                Nascetur aenean massa auctor tincidunt. Iaculis potenti amet
+                egestas ultrices consectetur adipiscing ultricies enim. Pulvinar
+                fames vitae vitae quis. Quis amet vulputate tincidunt at in
+                nulla nec. Consequat sed facilisis dui sit egestas ultrices
+                tellus. Ullamcorper arcu id pretium sapien proin integer nisl.
+                Felis orci diam odio.
+              </p>
+              <p className="mb-5">
+                Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
+                tellus quam porttitor. Mauris velit euismod elementum arcu neque
+                facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
+                enim mattis odio in risus nunc.
+              </p>
+            </div>
+            <div className="relative mt-16">
+              <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
+                <ActionButton setSelectedPage={setSelectedPage}>
+                  Join Now
+                </ActionButton>
               </div>
             </div>
           </div>
