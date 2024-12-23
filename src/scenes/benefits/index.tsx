@@ -6,6 +6,7 @@ import {
   AcademicCapIcon,
 } from "@heroicons/react/24/solid";
 import HText from "@/shared/HText";
+import BenefitsPageGraphic from "@/assets/BenefitsPageGraphic.png";
 import Benefit from "./Benefit";
 import ActionButton from "@/shared/ActionButton";
 
@@ -82,8 +83,12 @@ const Benefits = ({ setSelectedPage }: Props) => {
             />
           ))}
         </motion.div>
-        <div>
-          <img />
+        <div className="mt-16 items-center gap-20 justify-between md:mt-28 md:flex">
+          <img
+            className="mx-auto"
+            src={BenefitsPageGraphic}
+            alt="benefits-page-graphic"
+          />
           <div>
             <div className="relative">
               <div className="before:absolute before:-left-20 before:-top-20 before:z-[1] before:content-abstractwaves">
