@@ -1,9 +1,16 @@
-type Props = {}
+import { SelectedPage } from "@/shared/types";
+import { motion } from "framer-motion";
+import { useForm } from "react-hook-form";
+import ContactUsPageGraphic from "@/assets/ContactUsPageGraphic.png"
 
-const ContactUs = (props: Props) => {
-  return (
-    <div>ContactUs</div>
-  )
-}
+type Props = {
+  setSelectedPage: (value: SelectedPage) => void;
+};
 
-export default ContactUs
+const ContactUs = ({ setSelectedPage }: Props) => {
+  return <section id="contactus">
+
+  </section>
+};
+
+export default ContactUs;
