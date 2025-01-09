@@ -9,6 +9,7 @@ type Props = {
 };
 
 const ContactUs = ({ setSelectedPage }: Props) => {
+  const inputStyles = `bg-primary-300 w-full rounded-lg px-5 py-3 placeholder-white`;
   const {
     register,
     trigger,
@@ -57,7 +58,14 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, y: 0 },
             }}
           >
-            <form target="_blank" onSubmit={onSubmit()}></form>
+            <form
+              target="_blank"
+              onSubmit={onSubmit}
+              method="POST"
+              action="https://formsubmit.co/diaconudenisandrei@yahoo.com"
+            >
+              <input className={inputStyles} type="text" placeholder="NAME" {...register("")} />
+            </form>
           </motion.div>
         </div>
       </motion.div>
