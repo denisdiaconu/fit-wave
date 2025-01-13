@@ -9,7 +9,7 @@ type Props = {
 };
 
 const ContactUs = ({ setSelectedPage }: Props) => {
-  const inputStyles = `bg-primary-300 w-full rounded-lg px-5 py-3 placeholder-white`;
+  const inputStyles = `bg-primary-300 w-full rounded-lg mt-5 px-5 py-3 placeholder-white`;
   const {
     register,
     trigger,
@@ -62,7 +62,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               target="_blank"
               onSubmit={onSubmit}
               method="POST"
-              action="https://formsubmit.co/diaconudenisandrei@yahoo.com"
+              action="https://formsubmit.co/68ea6eccaf99992acb61101c2c44892c"
             >
               <input
                 className={inputStyles}
@@ -94,9 +94,10 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                     "Invalid email address."}
                 </p>
               )}
-              <input
+              <textarea
                 className={inputStyles}
-                type="text"
+                rows={4}
+                cols={50}
                 placeholder="MESSAGE"
                 {...register("message", { required: true, maxLength: 2000 })}
               />
@@ -107,6 +108,9 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                     "Max length is 2000 char."}
                 </p>
               )}
+              <button type="submit" className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white">
+                SUBMIT
+              </button>
             </form>
           </motion.div>
         </div>
