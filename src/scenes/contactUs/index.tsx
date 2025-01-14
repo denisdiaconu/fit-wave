@@ -90,8 +90,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 <p className="mt-1 text-primary-500">
                   {errors.email.type === "required" &&
                     "This field is required."}
-                  {errors.email.type === "pattern" &&
-                    "Invalid email address."}
+                  {errors.email.type === "pattern" && "Invalid email address."}
                 </p>
               )}
               <textarea
@@ -103,16 +102,31 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               />
               {errors.message && (
                 <p className="mt-1 text-primary-500">
-                  {errors.message.type === "required" && "This field is required."}
+                  {errors.message.type === "required" &&
+                    "This field is required."}
                   {errors.message.type === "maxLength" &&
                     "Max length is 2000 char."}
                 </p>
               )}
-              <button type="submit" className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white">
+              <button
+                type="submit"
+                className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white"
+              >
                 SUBMIT
               </button>
             </form>
           </motion.div>
+          <motion.div
+            className="relative mt-16 basis-2/5 md:mt-0"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 50 },
+              visible: { opacity: 1, y: 0 },
+            }}
+          ></motion.div>
         </div>
       </motion.div>
     </section>
