@@ -9,7 +9,7 @@ type Props = {
 };
 
 const ContactUs = ({ setSelectedPage }: Props) => {
-  const inputStyles = `bg-primary-300 w-full rounded-lg mt-5 px-5 py-3 placeholder-white`;
+  const inputStyles = `bg-primary-300 w-full rounded-lg mb-5 px-5 py-3 placeholder-white`;
   const {
     register,
     trigger,
@@ -126,7 +126,11 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               hidden: { opacity: 0, y: 50 },
               visible: { opacity: 1, y: 0 },
             }}
-          ></motion.div>
+          >
+            <div className="w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-evolvetext">
+              <img className="w-full" alt="contact-us-page-graphic" src={ContactUsPageGraphic} />
+            </div>
+          </motion.div>
         </div>
       </motion.div>
     </section>
