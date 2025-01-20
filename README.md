@@ -5,13 +5,18 @@ A Fitness page built with React and TypeScript, providing a modern and responsiv
 ## Built With
 
 - JavaScript
+- React
+- Typescript
+- Vite
+- Hero Icons
+- React Anchor Link Smooth Scroll
 
 
 ## 🔴 Live <a name = "here"></a>
-**Click [here](https://next-ecommerce-seven-xi.vercel.app/) in order to see the page of this project.**
+**Click [here](WEBSITE LINK IN PROGRESS) in order to see the page of this project.**
 
 
-![Page](https://github.com/denisdiaconu/next-ecommerce/blob/master/public/images/next-image.png)
+![Page](https://github.com/denisdiaconu/fit-wave/blob/master/src/assets/fit-wave.png)
 
 
 ## Getting Started
@@ -21,14 +26,14 @@ To get a local copy up and running follow these simple example steps on the comm
 > Clone the project from it's github repo.
 ```bash
 
-  $ git clone https://github.com/denisdiaconu/next-ecommerce.git
+  $ git clone https://github.com/denisdiaconu/fit-wave.git
   
 ```
 
 > Change directory to the root of project
 ```bash
 
-  $ cd next-ecommerce
+  $ cd fit-wave
   
 ```
   
@@ -45,11 +50,6 @@ To get a local copy up and running follow these simple example steps on the comm
   $ npm run dev
 
 ```
-
-> Open http://localhost:3000/api/seed
-
-
-> Open http://localhost:3000
 
 ## Authors
 
