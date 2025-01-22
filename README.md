@@ -13,7 +13,7 @@ A Fitness page built with React and TypeScript, providing a modern and responsiv
 
 
 ## 🔴 Live <a name = "here"></a>
-**Click [here](WEBSITE LINK IN PROGRESS) in order to see the page of this project.**
+**Click [here](https://8db76091.fit-wave.pages.dev/) in order to see the page of this project.**
 
 
 ![Page](https://github.com/denisdiaconu/fit-wave/blob/master/src/assets/fit-wave.png)
