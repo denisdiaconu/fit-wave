@@ -1,6 +1,6 @@
 # Fit Wave
 
-A Fitness page built with React and TypeScript, providing a modern and responsive platform for an engaging user experience across devices.
+A sleek fitness-focused landing page crafted with React and TypeScript. Designed for responsiveness and performance, it features smooth scroll navigation and a clean, modern UI to engage users across all screen sizes.
 
 ## Built With
 
